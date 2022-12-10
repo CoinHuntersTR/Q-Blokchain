@@ -10,7 +10,7 @@
 |  3| 2GB  | 128GB    |
 
  # Daha önce Node kurulumu yapmadıysanız buradan sırasıyla adımları takip ederek tüm süreci öğrenebilirsiniz.
-  ## Yeni Başladım Rehberi; [Pusula Finans Labs.](https://www.pusulafinans.com/category/testnet/)
+  ## Yeni Başladım Rehberi; [Coin Hunters Testnet](https://www.pusulafinans.com/category/testnet/)
   ### 1. [Testnet ve Node test kurulum rehberi Bölüm-1](https://www.pusulafinans.com/testnet-ve-node-kurulum-rehberi/)
   ### 2. [Yeni Chrome Tarayıcı nasıl açarım?](https://www.pusulafinans.com/yeni-chrome-tarayici-nasil-acarim/)
   ### 3. [Ücretsiz Sunucu Kiralama](https://www.pusulafinans.com/nasil-ucretsiz-sunucu-kiralarim/)
@@ -19,7 +19,15 @@
   
 ## UYARI
 
-Aleo testneti PoW ve CPU ve Hashrate dayalı olduğu için, ödüllü testnet olmasına rağmen ödül kazanamayabilirsiniz. Ücretli aldığınız cihazlarda bile mining yaparken blok bulamazsanız ödüle hak kazanmayacağınızı bilin. Bu nedenle yapıp yapmamak size kalmış durumda. Bir önceki testnette katılıp hiç ödül kazanamayanlara ekip teselli ödülü vermişti. Bunu tekrar eder mi bilinmez? 
+![aleotestneti](https://miro.medium.com/max/4800/1*ESh0wU_KRa7cUxeXNv2aMg.webp)
+
+> Ödülü dağıtım periyodu ve Node çalıştırma süreleri yukarıdaki görselde belirtilmiştir. 31 Aralık 2022 kadar kurulum ve kayıt işlemleri (bu sırada node çalışıyor olacak, 31 Mart 2023 yılında da Node testi biteceği belirtilmiş.) 
+> Ödül Dağılım;
+### Kazanılan ödüller dağıtım tarihinden itibaren 3 AY KİLİTLİ kalacaktır.
+#### 1. Ödüllüerin %50'si ile Validatorlar kurmak ve ağda topluluk kurmak için stake edilebilecektir.
+#### 2. Kalan %50'si ile başka Validatorlere stake edilebilir.
+#### 3. Kazanılan tokenlerin %100'ü ile tüm oylamalarda oy hakkında sahip olunacaktır.
+#### [Detaylı Anlatım için Prohenin yayınladığı makale](https://medium.com/q-blockchain/q-blockchain-validator-onboarding-program-part-1-validator-incentivized-testnet-567ef6e4002e)
 
 ### Sistem Güncellemeleri;
 
