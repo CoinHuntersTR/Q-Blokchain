@@ -27,15 +27,22 @@
 #### 1. Ödüllüerin %50'si ile Validatorlar kurmak ve ağda topluluk kurmak için stake edilebilecektir.
 #### 2. Kalan %50'si ile başka Validatorlere stake edilebilir.
 #### 3. Kazanılan tokenlerin %100'ü ile tüm oylamalarda oy hakkında sahip olunacaktır.
-#### [Detaylı Anlatım için Prohenin yayınladığı makale](https://medium.com/q-blockchain/q-blockchain-validator-onboarding-program-part-1-validator-incentivized-testnet-567ef6e4002e)
+#### [Detaylı Anlatım için Projenin yayınladığı makale](https://medium.com/q-blockchain/q-blockchain-validator-onboarding-program-part-1-validator-incentivized-testnet-567ef6e4002e)
 
-### Sistem Güncellemeleri;
+> Projenin Discord Kanalına; [Buradan](https://discord.gg/aHdWbAh2R7) ulaşabilirsiniz.
+> Bu repoyu forklayıp yıldız vermeyi ve Github'da bizi takip etmeyi unutmayın.
+
+### Değişkenleri Ayarlayalım
 
 ```
-sudo apt update
-sudo apt install make clang pkg-config libssl-dev build-essential gcc xz-utils git curl vim tmux ntp jq llvm ufw -y
+PASSWORD=Kendinbelirlediğinşifre
 ```
 
+```
+echo "export PASSWORD=SIFRENIYAZ" $HOME/.bash_profile
+source $HOME/.bash_profile
+```SIFRENİYAZ bölümünde belirlediğin şifreyi ekliyoruz.
+> 
 ### Rust Yüklüyoruz.
 
 ```
