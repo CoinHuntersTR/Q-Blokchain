@@ -41,8 +41,9 @@ PASSWORD=Kendinbelirlediğinşifre
 ```
 echo "export PASSWORD=SIFRENIYAZ" $HOME/.bash_profile
 source $HOME/.bash_profile
-```SIFRENİYAZ bölümünde belirlediğin şifreyi ekliyoruz.
-> 
+```
+>SIFRENIYAZ bölümünde belirlediğin şifreyi ekliyoruz.
+
 ### Rust Yüklüyoruz.
 
 ```
