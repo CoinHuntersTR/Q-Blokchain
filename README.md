@@ -72,7 +72,7 @@ sudo apt-get update && sudo apt install jq && sudo apt install apt-transport-htt
 
 ### Binary ve pwd oluşturalım:
 > Kodları sırasıyla girelim.
-> SIFRE kısmını ddğiştirmeyi unutmayın.
+> SIFRE kısmını değiştirmeyi unutmayın.
 
 ```
 git clone https://gitlab.com/q-dev/testnet-public-tools.git
@@ -88,32 +88,42 @@ echo "SIFRE" >> pwd.txt
 cd ..
 docker run --entrypoint="" --rm -v $PWD:/data -it qblockchain/q-client:testnet geth account new --datadir=/data --password=/data/keystore/pwd.txt
 ```
-### Cüzdan oluşturuyoruz
+### Yapılandırma dosyasını düzenleyelim
+> Oluşturduğunuz adresin 0x'li olan kısmın dışında kalan bölümü alıyoruz.
+> CRTL X ve Y Enter ile kayıt ediyoruz.
 
 ```
-snarkos account new
+cp .env.example .env
+nano .env
 ```
 
-> Cüzdanı kurulumunu yaptığınızda size verilen bilgileri kayıt etmeyi unutmayın.
+### Aynı işlemi Şifre içinde yapıyoruz.
+> Adres ve password kısmını düzenliyoruz.
+> Adres kısmında 0x'siz, adresinizin başındaki kısım olmadan giriş yapıyoruz.
+> CTRL X ve Y enter ile kayıt ediyoruz.
 
-Buradaki gibi çıktı alacaksınız;
 ```
-Private Key    APrivateKey1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  <-- Save Me And Use In The Next Step
-     View Key  AViewKey1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  <-- Save Me
-      Address  aleo1xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  <-- Save Me 
+nano config.json
 ```
-## Node Başlatıyoruz
-> Aşağıdaki kodu girdiğinizde çıkan ekranda sizden cüzdanınızın Private Key'ini girmenizi istiyor.
-```
-./run-prover.sh
-```
-Bu adımda private keyimizi girdiğimizde çalışmaya başlıyor. Sonrasında blokda ödül kazanıp kazanmadığımıza explorer üzerinden cüzdan adresimizle bakabiliriz.
 
-# Explorer
-### https://www.aleo.network/
-### https://aleo123.io/
-### https://explorer.hamp.app/
+### Faucetten aldığımız tokenleri stake ediyoruz.
+> Bu komut çalışmazsa yukarda yapılandırma dosyaları olan  .env ve config.json eksik yapılmıştır. Üst kısımdan kontrol edin.
 
-# Aleo Sosyal Medya Bağlantıları
-### [Discord](https://discord.gg/aleohq)
-### [Twitter](https://twitter.com/AleoHQ)
+```
+docker run --rm -v $PWD:/data -v $PWD/config.json:/build/config.json qblockchain/js-interface:testnet validators.js
+```
+### Private Key ile özel anahtarımızı oluşturalım:
+> Komutları sırasıyla girin.
+
+```
+cd
+cd testnet-public-tools
+chmod +x run-js-tools-in-docker.sh
+./run-js-tools-in-docker.sh
+npm install
+```
+> Uyarı: Bu bölümde koddaki Ox'li cüzdan adresiniz ve belirlediğiniz SIFRE'yi girmeyi unutmayın.
+> Bu işlemden sonra PK adında bir klasör oluşur.
+> İşlemler bittikten sonra CTRL A+D ile çıkın!
+> 
+
