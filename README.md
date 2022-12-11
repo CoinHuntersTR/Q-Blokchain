@@ -125,5 +125,16 @@ npm install
 > Uyarı: Bu bölümde koddaki Ox'li cüzdan adresiniz ve belirlediğiniz SIFRE'yi girmeyi unutmayın.
 > Bu işlemden sonra PK adında bir klasör oluşur.
 > İşlemler bittikten sonra CTRL A+D ile çıkın!
-> 
+
+```
+chmod +x extract-geth-private-key.js
+node extract-geth-private-key 0XLİCUZDAN ../testnet-validator/ SIFRE
+```
+### WINSCP ve MobaXTerm ile sunucunuz dosyalar bölümüne bağlanıp;
+> Private key dosyanız  /root/testnet-public-tools/js-tools içinde olacak
+> Dosyanın içini açtığınızda size bir key verecek onu bilgisayarınıza indirip kayıt etmeyi unutmayın.
+
+![qchain](https://user-images.githubusercontent.com/111747226/206897008-14ea93cb-9b2d-458c-8a00-44dbadfddf1a.png)
+
+
 
