@@ -141,11 +141,47 @@ node extract-geth-private-key 0XLİCUZDAN ../testnet-validator/ SIFRE
 > İsterseniz yeni bir metamask kurabilirsiniz, size kalmış.
 
 ![meta1](https://user-images.githubusercontent.com/111747226/206897293-48d69c7b-1aaf-4f34-9add-7ed4a7d0f8c3.png)
-> Sağ üsteki simgeye basıyoruz,
-> İçe aktar sekmesine basıyoruz.
+> Sağ üsteki simgeye basıyoruz.
+> Hesabı içe aktar sekmesine basıyoruz.
 
 ![meta2](https://user-images.githubusercontent.com/111747226/206897331-81c019b0-1b05-4288-9931-e5318a24f900.png)
-> Özel Anahtar altındaki boşluğa yukarıdaki MobaxTerm ve WinSCP ile aldığınız txt dosyası içerisindeki özel anahtarı yapıştırıp cüzdanınız metamaska kurabilirsiniz.
+> Özel Anahtar altındaki boşluğa yukarıdaki MobaxTerm veya WinSCP ile aldığınız txt dosyası içerisindeki özel anahtarı yapıştırıp cüzdanınız metamaska kurabilirsiniz.
 
+### [Buradan](https://itn.qdev.li/) Başvurumuzu yapıyoruz.
+![basvuru](https://user-images.githubusercontent.com/111747226/206897580-5d317fe5-3b66-464b-84cb-71af40a2e01a.png)
 
+> Önce cüzdanı bağlıyoruz ve Q ağını metamaska yüklüyoruz. 
+> Başvuru için gerekli olan bilgileri hepsini giriyoruz, mail adresi, github vs.
+> İşlemleri tamamladıktan sonra metamask gelen imzayı kabul ediyoruz.
+
+### !! Böyle bir görsel alacaksınız. Sonrası oldukça önemli
+![qqq](https://user-images.githubusercontent.com/111747226/206897745-ef2092af-6a91-40ef-943b-0e326f42c248.png)
+
+```
+cd
+cd testnet-public-tools
+cd testnet-validator
+nano docker-compose.yaml
+```
+
+> geth'nin virgüne gelin boşluk bırakın
+> " işareti ekleyip formda ki --ethstatslı komutu girin
+> girdikten sonra bir daha " işareti ekleyip , ekleyin ve boşluk bırakın
+> ÖRNEK: "geth", "--ethstats=ITN-coinhunters-1996d:qstats-testnet@stats.qtestnet.org", ..
+> CTRL X Y ENTER ile çıkın
+
+### NODE Başlatıyoruz:
+
+```
+screen -S q
+```
+```
+docker compose up -d
+```
+```
+docker compose logs -f
+```
+### Explorerdan kontrolü
+[Buradan](https://stats.qtestnet.org/) kontrol edebilirsiniz.
+Kendi node yeşil görüyorsanız, aktif, Sarı görüyorsanız eşleşmeye çalışıyor, Kırmızı görüyorsanız henüz eşleşmemiş demektir.
 
