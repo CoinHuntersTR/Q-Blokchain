@@ -136,5 +136,16 @@ node extract-geth-private-key 0XLİCUZDAN ../testnet-validator/ SIFRE
 
 ![qchain](https://user-images.githubusercontent.com/111747226/206897008-14ea93cb-9b2d-458c-8a00-44dbadfddf1a.png)
 
+### Bir tane metamask cüzdan gerekli
+> Mecvut kullandığınız cüzdanınızın içine de bu cüzdanı aktarabilirsiniz, 
+> İsterseniz yeni bir metamask kurabilirsiniz, size kalmış.
+
+![meta1](https://user-images.githubusercontent.com/111747226/206897293-48d69c7b-1aaf-4f34-9add-7ed4a7d0f8c3.png)
+> Sağ üsteki simgeye basıyoruz,
+> İçe aktar sekmesine basıyoruz.
+
+![meta2](https://user-images.githubusercontent.com/111747226/206897331-81c019b0-1b05-4288-9931-e5318a24f900.png)
+> Özel Anahtar altındaki boşluğa yukarıdaki MobaxTerm ve WinSCP ile aldığınız txt dosyası içerisindeki özel anahtarı yapıştırıp cüzdanınız metamaska kurabilirsiniz.
+
 
 
