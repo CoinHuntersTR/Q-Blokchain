@@ -70,22 +70,23 @@ sudo apt-get update && sudo apt install jq && sudo apt install apt-transport-htt
 ```
 
 
-### Gerekli olan portları açıyoruz.
-> Portları sırasıyla giriyoruz.
+### Binary ve pwd oluşturalım:
+> Kodları sırasıyla girelim.
+> SIFRE kısmını ddğiştirmeyi unutmayın.
 
 ```
-sudo ufw allow 4133/tcp
-sudo ufw allow 3033/tcp
+git clone https://gitlab.com/q-dev/testnet-public-tools.git
+cd testnet-public-tools/testnet-validator/
+mkdir keystore
+cd keystore/
+echo "SIFRE" >> pwd.txt
 ```
 
-### Node için gerekli olan kurulumları yapıyoruz.
-> Kodları sırasıyla giriyoruz.
+### Cüzdan oluşturup bilgileri kaydedliyoruz.
+> Oluşan cüzdan için token alıyoruz. [Faucet](https://faucet.qtestnet.org/)
 ```
-tmux
-git clone https://github.com/AleoHQ/snarkOS.git --depth 1
-cd snarkOS
-./build_ubuntu.sh
-cargo install --path .
+cd ..
+docker run --entrypoint="" --rm -v $PWD:/data -it qblockchain/q-client:testnet geth account new --datadir=/data --password=/data/keystore/pwd.txt
 ```
 ### Cüzdan oluşturuyoruz
 
