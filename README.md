@@ -44,12 +44,34 @@ source $HOME/.bash_profile
 ```
 >SIFRENIYAZ bölümünde belirlediğin şifreyi ekliyoruz.
 
-### Rust Yüklüyoruz.
+### Sistem Güncellemeleri
 
 ```
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
-source $HOME/.cargo/env
+sudo apt update
 ```
+```
+sudo apt upgrade
+```
+```
+apt install docker-compose
+```
+
+```
+apt install npm
+```
+
+```
+apt install screen
+```
+
+```
+apt install screen
+```
+
+```
+sudo apt-get update && sudo apt install jq && sudo apt install apt-transport-https ca-certificates curl software-properties-common -y && curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable" && sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin && sudo apt-get install docker-compose-plugin
+```
+
 
 ### Gerekli olan portları açıyoruz.
 > Portları sırasıyla giriyoruz.
