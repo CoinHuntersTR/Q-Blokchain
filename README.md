@@ -24,8 +24,8 @@
 > Ödülü dağıtım periyodu ve Node çalıştırma süreleri yukarıdaki görselde belirtilmiştir. 31 Aralık 2022 kadar kurulum ve kayıt işlemleri (bu sırada node çalışıyor olacak, 31 Mart 2023 yılında da Node testi biteceği belirtilmiş.) 
 > Ödül Dağılım;
 ### Kazanılan ödüller dağıtım tarihinden itibaren 3 AY KİLİTLİ kalacaktır.
-#### 1. Ödüllüerin %50'si ile Validatorlar kurmak ve ağda topluluk kurmak için stake edilebilecektir.
-#### 2. Kalan %50'si ile başka Validatorlere stake edilebilir.
+#### 1. Ödüllüerin %50'si ile Validator kurmak ve ağda topluluk oluşturmak için stake edilebilecektir.
+#### 2. Kalan %50'si ile başka Validatore stake edilebilir.
 #### 3. Kazanılan tokenlerin %100'ü ile tüm oylamalarda oy hakkında sahip olunacaktır.
 #### [Detaylı Anlatım için Projenin yayınladığı makale](https://medium.com/q-blockchain/q-blockchain-validator-onboarding-program-part-1-validator-incentivized-testnet-567ef6e4002e)
 
@@ -60,9 +60,6 @@ apt install docker-compose
 apt install npm
 ```
 
-```
-apt install screen
-```
 
 ```
 apt install screen
